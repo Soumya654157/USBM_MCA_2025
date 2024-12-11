@@ -1,0 +1,123 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+}
+
+.navbar__logo {
+    width: 100px;
+    object-fit: contain;
+}
+
+.navbar__avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    height: 448px;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.banner__contents {
+    position: absolute;
+    top: 20%;
+    left: 30px;
+}
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.banner__buttons {
+    margin-top: 20px;
+}
+
+.banner__button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: rgba(51, 51, 51, 0.8);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.banner__description {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    max-width: 360px;
+}
+
+/* Row Styles */
+.row {
+    margin-top: 100px;
+    padding-left: 20px;
+}
+
+.row__posters {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row__poster {
+    max-height: 250px;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.row__poster:hover {
+    transform: scale(1.08);
+}
+
+.row__posterLarge {
+    max-width: 200px;
+}
+
+.row__posterSmall {
+    max-width: 150px;
+}
+
+/* Fade effect */
+.banner--fadeBottom {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    height: 25%;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
+}
